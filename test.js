@@ -30,7 +30,7 @@ const Building = require('./lib/building');
 // console.log(a1.isFull()); // full: false
 // console.log(a1)
 
-let a2 = new Apartment("B", 2, 1);
+// let a2 = new Apartment("B", 2, 1);
 // let p1 = new Tenant("Al", "Kirkeby", "male", "January 23, 1949");
 // let p2 = new Tenant("Karl", "Matuschka", "male", "June 27, 1949");
 // console.log(a2.isEmpty()); // true
@@ -55,8 +55,17 @@ let a2 = new Apartment("B", 2, 1);
 // console.log(a3.tenants.length) // 2
 // console.log(a3)
 
-let b1 = new Building("208 Leonard St", 3);
-console.log (b1.add(3, a2))
-console.log(b1.floor(3))
 
+let a1 = new Apartment("B", 2, 1)
+let a2 = new Apartment("A", 1, 1)
+let a3 = new Apartment("A", 1, 1)
+
+let b1 = new Building("208 Leonard St", 3);
+
+b1.add(1, a1)
+b1.add(1, a2)
+b1.add(2, a3)
+// console.log(b1.collectRents)
+b1.collectRents
+console.log('apt', b1)
 
