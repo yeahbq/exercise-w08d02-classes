@@ -66,6 +66,7 @@ b1.add(1, a1)
 b1.add(1, a2)
 b1.add(2, a3)
 // console.log(b1.collectRents)
-b1.collectRents
+b1.collectRents()
 console.log('apt', b1)
+b1.hasVacancies()
 
